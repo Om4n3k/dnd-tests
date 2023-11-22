@@ -6,3 +6,14 @@
 body {
     @apply bg-neutral-900 text-white;
 }
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.wiggle {
+    animation: wiggle .3s cubic-bezier(.36,.07,.19,.97) infinite;
+}
